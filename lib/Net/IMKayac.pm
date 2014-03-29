@@ -100,15 +100,42 @@ Net::IMKayac - Simple and tiny wrapper for im.kayac API
 Net::IMKayac is the simple and tiny message sender for im.kayac API.
 You can send push notification in a few step;
 
+=head1 INTERFACE
+=head2 Class method
+=head3 Net::IMKayac->new(\%args)
+%args may expect
+=item username :Str (required)
+username on im.kayac;
+If it is not specified, new will croak with exception.
+=item auth :Str = none(default)
+specify auth type
+none: without authentication
+password(pass): password authentication
+secret_key(secret): secret key authentication
+
+=head2 Instance method
+=head3 send($message), send($message, $handler)
+Send a request to im.kayac and returns a hash reference of API's response;
+it contains $message as a message
+$handler is optional. It is url scheme for iPhone apllications.
+For futher details on it, refer to developer.apple.com
+
+=head3 is_succeed()
+Aliase of $self->{is_succeed}
+It returns a true value if previous send() method is succeeded.
+otherwise, it returns false;
+It will be updated each time called send() method. Watch out for it when you send a request in succession.
+
 =head1 LICENSE
 
-Copyright (C) Aiga Suzuki.
+Copyright (C) Aiga Suzuki a.k.a. tochikuji;
 
 This software is released under the MIT license.
+For more details, refer to LICENSE.
 
 =head1 AUTHOR
 
-Aiga Suzuki E<lt>tochikuji@gmail.comE<gt>
+Aiga Suzuki
 
 =cut
 

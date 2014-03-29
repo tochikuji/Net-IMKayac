@@ -1,12 +1,12 @@
 {
    "abstract" : "Simple and tiny wrapper for im.kayac API",
    "author" : [
-      "Aiga Suzuki <tochikuji@gmail.com>"
+      "Aiga Suzuki"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Minilla/v0.11.1, CPAN::Meta::Converter version 2.133380",
    "license" : [
-      "MIT"
+      "unknown"
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
@@ -57,5 +57,19 @@
       }
    },
    "release_status" : "unstable",
-   "version" : "0.01"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/tochikuji/Net-IMKayac/issues"
+      },
+      "homepage" : "https://github.com/tochikuji/Net-IMKayac",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/tochikuji/Net-IMKayac.git",
+         "web" : "https://github.com/tochikuji/Net-IMKayac"
+      }
+   },
+   "version" : "0.01",
+   "x_contributors" : [
+      "Aiga Suzuki <tochikuji@gmail.com>"
+   ]
 }
